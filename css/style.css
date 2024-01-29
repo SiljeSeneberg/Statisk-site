@@ -1,14 +1,85 @@
-body{
-    background-color: #DEDEDE;
+body {
+  background-color: #dedede;
 }
 
 /* --------- TEKST ---------- */
 @font-face {
-    font-family: "nexa";
-    src: url("../font/Nexa-Heavy.woff2");
+  font-family: "nexa";
+  src: url("../font/Nexa-Heavy.woff2");
+}
+@font-face {
+    font-family: "nexaLight";
+    src: url("../font/Nexa-ExtraLight.woff2");
 }
 
-h1{
-    font-family: "nexa";
-    font-size: 40px;
+h1 {
+  font-family: "nexa";
+  font-size: 60px;
+  color: #0303f1;
+  margin-bottom: 0;
 }
+
+h2{
+    font-family: "nexa";
+    font-size: 30px;
+    color: #292A2A;
+    margin-bottom: 0;
+}
+
+p{
+    font-family: "nexaLight";
+    font-size: 18px;
+    color: #292A2A;
+}
+
+a {
+    font-family: "nexa";
+    font-size: 16px;
+    color: #454445;
+  }
+
+ul {
+  list-style-type: none;
+}
+strong{
+    color: #0303f1;
+}
+
+.breadcrumbs {
+    font-size: 16px;
+    margin-top: 0;
+  }
+  
+  .breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .breadcrumbs li {
+    display: inline;
+    margin-right: 1px;
+  }
+  
+  .breadcrumbs a {
+    text-decoration: none;
+    color: #454445;
+  }
+  
+  .breadcrumbs a:hover {
+    text-decoration: underline;
+  }
+  
+/* -------- GRID --------- */
+.grid3_1{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+/* -------- forside --------- */
+a.index {
+    font-family: "nexa";
+    font-size: 28px;
+    color: #454445;
+    line-height: 400%;
+  }
