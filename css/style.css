@@ -1,0 +1,14 @@
+body{
+    background-color: #DEDEDE;
+}
+
+/* --------- TEKST ---------- */
+@font-face {
+    font-family: "nexa";
+    src: url("../font/Nexa-Heavy.woff2");
+}
+
+h1{
+    font-family: "nexa";
+    font-size: 40px;
+}
