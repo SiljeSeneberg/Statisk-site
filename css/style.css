@@ -79,16 +79,18 @@ strong {
   grid-template-columns: 2fr 1fr;
 }
 
-/* .grid1_1{
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-} */
+.grid1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+  row-gap: 1em;
+}
 
-.grid1_1_1_1{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 1em;
-    row-gap: 1em;
+.grid1_1_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1em;
+  row-gap: 1em;
 }
 
 /* -------- Indhold --------- */
@@ -105,17 +107,82 @@ a.index {
   line-height: 400%;
 }
 
-/* -------- forside --------- */
-.h2_PL{
+/* -------- produktliste --------- */
+.h2_PL {
+  font-family: "nexa";
+  font-size: 16px;
+  color: #292a2a;
+  margin-bottom: 0;
+}
+.p_PL {
+  font-family: "nexalight";
+  font-size: 12px;
+  color: #292a2a;
+  margin-bottom: 0;
+}
+
+/* --------- kategori --------- */
+.box {
+  border: #0303f1;
+  width: 350px;
+  height: 250px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.h2_K {
+  padding: 10%;
+}
+
+hr {
+  max-width: 250px;
+}
+
+/* --------- Mobile ----------- */
+@media (max-width: 700px) {
+  p {
+    font-family: "nexaLight";
+    font-size: 18px;
+    color: #292a2a;
+  }
+
+  a {
     font-family: "nexa";
     font-size: 16px;
-    color: #292a2a;
-    margin-bottom: 0; 
+    color: #454445;
+    text-decoration: none;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+  strong {
+    color: #0303f1;
+  }
+
+    /* ---------- Produktliste ---------- */
+#grid1_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
 }
-.p_PL{
-    font-family: "nexalight";
-    font-size: 12px;
-    color: #292a2a;
-    margin-bottom: 0; 
+
+  /* ---------- kategori ---------- */
+  .box {
+    border: #0303f1;
+    width: 200px;
+    height: 150px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .h2_K {
+    padding: 10%;
+  }
+
+  hr {
+    max-width: 150px;
+  }
 }
-/* --------- Mobile ----------- */
