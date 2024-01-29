@@ -37,6 +37,7 @@ a {
   font-family: "nexa";
   font-size: 16px;
   color: #454445;
+  text-decoration: none;
 }
 
 ul {
@@ -49,6 +50,7 @@ strong {
 .breadcrumbs {
   font-size: 16px;
   margin-top: 0;
+  margin-bottom: 5%;
 }
 
 .breadcrumbs ul {
@@ -85,6 +87,8 @@ strong {
 .grid1_1_1_1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
 }
 
 /* -------- Indhold --------- */
@@ -101,4 +105,17 @@ a.index {
   line-height: 400%;
 }
 
+/* -------- forside --------- */
+.h2_PL{
+    font-family: "nexa";
+    font-size: 16px;
+    color: #292a2a;
+    margin-bottom: 0; 
+}
+.p_PL{
+    font-family: "nexalight";
+    font-size: 12px;
+    color: #292a2a;
+    margin-bottom: 0; 
+}
 /* --------- Mobile ----------- */
