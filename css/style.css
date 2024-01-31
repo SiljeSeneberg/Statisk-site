@@ -134,6 +134,11 @@ strong {
     margin-bottom: 0;
   }
 
+  .discount{
+    font-family: "nexa";
+    color: orange;
+  }
+
   /* --------- kategori --------- */
   .box {
     border: #0303f1;
