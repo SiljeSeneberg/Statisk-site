@@ -134,9 +134,28 @@ strong {
     margin-bottom: 0;
   }
 
-  .discount{
+  .discount {
     font-family: "nexa";
     color: orange;
+  }
+  .hotprice {
+    position: absolute;
+    max-width: 200px;
+  }
+  .procent {
+    position: fixed;
+    top: 41%;
+    left: 14%;
+  }
+
+  .udsolgt{
+    filter: grayscale(100%);
+
+  }
+  .soldOut{
+    position: absolute;
+    top: 20%;
+    rotate: -40deg;
   }
 
   /* --------- kategori --------- */
@@ -228,6 +247,30 @@ strong {
     grid-template-columns: 1fr 1fr;
     column-gap: 1em;
     row-gap: 1em;
+  }
+
+  .discount {
+    font-family: "nexa";
+    color: orange;
+  }
+  .hotprice {
+    position: absolute;
+    max-width: 100px;
+  }
+  .procent {
+    position: absolute;
+    top: 41%;
+    left: 14%;
+  }
+
+  .udsolgt{
+    filter: grayscale(100%);
+
+  }
+  .soldOut{
+    position: absolute;
+    top: 20%;
+    rotate: -40deg;
   }
 
   /* ---------- kategori ---------- */
