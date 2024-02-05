@@ -142,6 +142,21 @@ strong {
     margin: 10%;
   }
 
+  /* --- UDSOLGT ---- */
+  .soldOutPosProdukt {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    rotate: -40deg;
+  }
+
+  /* ---- Discount ---- */
+  .hotpriceProdukt {
+    position: absolute;
+    margin-top: -3%;
+    max-width: 250px;
+  }
+
   /* -------- produktliste --------- */
   .h3_PL {
     font-family: "nexa";
@@ -249,7 +264,7 @@ strong {
 
   img {
     max-width: 100%;
-    max-height: 400px;
+    max-height: 500px;
   }
 
   /* -------- forside --------- */
@@ -266,12 +281,25 @@ strong {
     font-size: 20px;
     color: #0303f1;
     outline: #0303f1;
-    margin: 20%;
   }
 
   #grid2_1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
+  }
+
+  /* --- UDSOLGT ---- */
+  .soldOutPosProdukt {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    rotate: -40deg;
+  }
+
+  /* ---- Discount ---- */
+  .hotpriceProdukt {
+    position: absolute;
+    max-width: 200px;
   }
 
   /* -------- produktliste --------- */
