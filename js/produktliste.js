@@ -41,6 +41,9 @@ function showProduct(product) {
     copy.querySelector(".rabat .procent").textContent = product.discount + "%";
   }
 
+   /* link til produktside */
+   copy.querySelector(".linkTilProdukt").setAttribute("href", `produkt.html?id=${product.id}`)
+
   /* appende */
   document.querySelector("section").appendChild(copy);
 }
