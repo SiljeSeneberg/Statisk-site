@@ -1,7 +1,7 @@
 body {
   background-color: #dedede;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /* --------- TEKST ---------- */
@@ -13,11 +13,25 @@ body {
   font-family: "nexaLight";
   src: url("../font/Nexa-ExtraLight.woff2");
 }
+@font-face {
+  font-family: "saint";
+  src: url("../font/SaintCarellClean_PERSONAL_USE_ONLY.woff2");
+}
+
+h1{
+  font-family: "saint";
+  font-size: 80px;
+  color: #292a2a;
+  margin-bottom: 0;
+  text-align: center;
+  filter:drop-shadow(0 2px 2px #454445);
+  opacity: 90%;
+}
 
 h2 {
   font-family: "nexa";
-  font-size: 60px;
-  color: #0303f1;
+  font-size: 45px;
+  color: #292a2a;
   margin-bottom: 0;
 }
 
@@ -37,7 +51,7 @@ p {
 a {
   font-family: "nexa";
   font-size: 16px;
-  color: #454445;
+  color: #0303f1;
   text-decoration: none;
 }
 
