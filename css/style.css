@@ -18,13 +18,13 @@ body {
   src: url("../font/SaintCarellClean_PERSONAL_USE_ONLY.woff2");
 }
 
-h1{
+h1 {
   font-family: "saint";
   font-size: 80px;
   color: #292a2a;
   margin-bottom: 0;
   text-align: center;
-  filter:drop-shadow(0 2px 2px #454445);
+  filter: drop-shadow(0 2px 2px #454445);
   opacity: 90%;
 }
 
@@ -156,18 +156,28 @@ strong {
     margin-bottom: 0;
   }
 
-  .discount {
-    font-family: "nexa";
-    color: orange;
+  /* --- UDSOLGT ---- */
+  .soldOutPos {
+    position: absolute;
+    top: 25%;
+    rotate: -40deg;
   }
+  .udsolgt {
+    filter: grayscale(100%);
+  }
+  .soldoutImage {
+    display: none;
+  }
+  .SoldOut .soldoutImage {
+    display: block;
+  }
+
+  /* ---- Discount ---- */
   .hotprice {
     position: absolute;
     max-width: 200px;
   }
   .procent {
-    position: absolute;
-    margin-top: 1%;
-    margin-left: 15%;
     border: 2px solid #f1f1f1;
     background-color: #f1f1f1;
     border-radius: 5px;
@@ -175,15 +185,6 @@ strong {
     padding: 5px; /* Plads indeni boksen */
     color: #ff0000;
     width: fit-content;
-  }
-
-  .udsolgt {
-    filter: grayscale(100%);
-  }
-  .soldOut {
-    position: absolute;
-    top: 20%;
-    rotate: -40deg;
   }
 
   /* --------- kategori --------- */
@@ -227,11 +228,6 @@ strong {
   }
   strong {
     color: #0303f1;
-  }
-  /* -------- Indhold --------- */
-  img {
-    max-width: 100%;
-    max-height: 600px;
   }
 
   /* -------- forside --------- */

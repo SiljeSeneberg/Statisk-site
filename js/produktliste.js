@@ -19,22 +19,27 @@ function showProduct(product) {
   copy.querySelector("h3").textContent = product.productdisplayname;
   copy.querySelector("#price span").textContent = product.price;
   copy.querySelector("#brand span").textContent = product.brandname;
+  /*  copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/600/${product.id}.webp`; */
 
   if (product.soldout) {
     /* produktet er udsolgt */
     copy.querySelector("article").classList.add("SoldOut");
+    copy.querySelector("article").classList.add("udsolgt");
   } else {
     copy.querySelector("article").classList.remove("SoldOut");
+    copy.querySelector("article").classList.remove("udsolgt");
   }
 
- if (product.discount) {
+  if (!product.discount) {
+    //! betyder not
     /* produktet er på tilbud */
-    copy.querySelector("article").classList.add("discount");
-  copy.querySelector("article").classList.add("rabat");
- } else {
-  copy.querySelector("article").classList.remove("discount");
- copy.querySelector("article").classList.remove("rabat");
-} /* appende */
+    copy.querySelector(".discount").remove();
+    copy.querySelector(".rabat").remove();
+  } else {
+    copy.querySelector(".rabat .procent").textContent = product.discount + "%";
+  }
+
+  /* appende */
   document.querySelector("section").appendChild(copy);
 }
 
