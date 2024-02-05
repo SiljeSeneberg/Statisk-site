@@ -24,23 +24,30 @@
       </nav>
 
       <section class="grid1_1_1_1" id="grid1_1">
-        <a href="produkt.html">
-          <article>
-            <img
-              src="https://kea-alt-del.dk/t7/images/webp/640/1526.webp"
-              alt="backpack"
-            />
-            <div>
-              <h3 class="h3_PL">Big Cat Backpack Black</h3>
-              <div>
-                <p class="p_PL"><strong>Price</strong> 1299,-</p>
-                <p class="p_PL"><strong>Brand</strong> Puma</p>
+        <template id="smallProductTemplate">
+          <a href="produkt.html">
+            <article>
+              <div class="discount">
+                <img class="hotprice" src="img/hotprice.png" alt="hotprice" />
               </div>
-            </div>
-          </article>
-        </a>
+              <img
+                src="https://kea-alt-del.dk/t7/images/webp/640/1526.webp"
+                alt="backpack"
+              />
+              <div>
+                <h3 class="h3_PL"></h3>
+                <div>
+                  <p id="price" class="p_PL"><strong>Price </strong><span></span></p>
+                  <p id="brand" class="p_PL"><strong>Brand </strong> <span></span></p>
+                </div>
+              </div>
+            </article>
+          </a>
+        </template>
 
-        <a href="produkt.html">
+   
+
+<!--         <a href="produkt.html">
           <article>
             <div class="discount">
               <img class="hotprice" src="img/hotprice.png" alt="hotprice" />
@@ -225,7 +232,7 @@
               </div>
             </div>
           </article>
-        </a>
+        </a> -->
       </section>
     </main>
     <footer></footer>
