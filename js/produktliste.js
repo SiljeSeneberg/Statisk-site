@@ -1,6 +1,9 @@
-fetch("https://kea-alt-del.dk/t7/api/products")
+const urlParams = new URLSearchParams(window.location.search);
+const cat = urlParams.get("category");
+
+fetch("https://kea-alt-del.dk/t7/api/products?category=" + cat)
   .then((res) => res.json())
-  .then((data) => showProducts(data));
+  .then(data => showProducts(data));
 
 function showProducts(products) {
   /* looper igennem og kalder showProduct (ental) */
@@ -41,8 +44,10 @@ function showProduct(product) {
     copy.querySelector(".rabat .procent").textContent = product.discount + "%";
   }
 
-   /* link til produktside */
-   copy.querySelector(".linkTilProdukt").setAttribute("href", `produkt.html?id=${product.id}`)
+  /* link til produktside */
+  copy
+    .querySelector(".linkTilProdukt")
+    .setAttribute("href", `produkt.html?id=${product.id}`);
 
   /* appende */
   document.querySelector("section").appendChild(copy);
