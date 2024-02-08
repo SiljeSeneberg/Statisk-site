@@ -71,7 +71,7 @@ strong {
   text-decoration: underline;
 }
 
-/* --------- Web ----------- */
+/* ---------------------------- Web ------------------------------ */
 @media (min-width: 700px) {
   h1 {
     font-family: "saint";
@@ -139,7 +139,6 @@ strong {
     font-size: 20px;
     color: #0303f1;
     outline: #0303f1;
-    margin: 10%;
   }
 
   /* --- UDSOLGT ---- */
@@ -205,8 +204,8 @@ strong {
   /* --------- kategori --------- */
   .box {
     border: #0303f1;
-    width: 450px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
     border: 2px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
