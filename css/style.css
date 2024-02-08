@@ -132,6 +132,10 @@ strong {
     margin-top: -6%;
   }
 
+  .imgProdukt {
+    margin-bottom: 10%;
+  }
+
   button {
     max-width: 200px;
     max-height: 70px;
